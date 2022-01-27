@@ -1,0 +1,113 @@
+<style>
+  *
+  {
+    box-sizing: border-box;
+  }
+
+  body
+  {
+    font-family: Arial;
+    background: #f1f1f1;
+    margin: 0;
+  }
+
+  /* set a media query */
+  @media (max-width: 700px)
+  {
+    /* remove grid */
+    .grid-container
+    {
+      display: block;
+    }
+    /* remove leftnav */
+    .leftnav
+    {
+      display: none;
+    }
+  }
+
+  /* Header Title */
+  .header
+  {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+  }
+  /* Style the header link*/
+  .header a
+  {
+    color: black;
+    text-decoration: none;
+  }
+  /* Style the header size*/
+  .header h1
+  {
+    font-size: 50px;
+  }
+
+  /* Style the active bar*/
+  #active
+  {
+    color: #404040;
+    background-color: #cc99ff;
+  }
+
+  /* Style the top navigation bar */
+  .topnav
+  {
+    overflow: hidden;
+    background-color: #404040;
+    font-weight: bold;
+  }
+  /* Style the topnav links */
+  .topnav a
+  {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* Create color on hover */
+  .topnav a:hover
+  {
+    background-color: #1a1a1a;
+  }
+
+  /* Create grid */
+  .grid-container
+  {
+    display: grid;
+    grid-template-areas: 'leftnav main';
+    grid-template-columns: 150px auto;
+  }
+
+  /* Style the left navigation bar */
+  .leftnav
+  {
+    overflow: hidden;
+    background-color: #e6e6e6;
+    font-weight: bold;
+    width: 150px;
+  }
+  /* Style the leftnav links */
+  .leftnav a
+  {
+    display: block;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  /* Create color on hover */
+  .leftnav a:hover
+  {
+    background-color: #bfbfbf;
+  }
+
+  .main
+  {
+    padding-left: 30px;
+  }
+
+</style>
